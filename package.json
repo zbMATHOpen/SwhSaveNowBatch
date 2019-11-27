@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "lint": "eslint './src/**/*.{js,ts,tsx}'",
+    "lint": "eslint ./src/**/*.{js,ts,tsx}",
     "test": "jest",
     "test:watch": "jest --watchAll",
     "build": "tsc",
@@ -15,22 +15,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/beeman/template-typescript-package.git"
+    "url": "https://github.com/fairmath/SwhSaveNowBatch.git"
   },
   "keywords": [
-    "TypeScript",
-    "Package",
-    "Starter"
+    "swMATH",
+    "Software Heritage",
+    "SaveNow"
   ],
   "author": {
-    "name": "Bram Borggreve",
-    "email": "borggreve@gmail.com"
+    "name": "Moritz Schubotz",
+    "email": "wiki@physikerwelt.de"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/beeman/template-typescript-package/issues"
+    "url": "https://github.com/fairmath/SwhSaveNowBatch/issues"
   },
-  "homepage": "https://github.com/beeman/template-typescript-package#readme",
+  "homepage": "https://github.com/fairmath/SwhSaveNowBatch#readme",
   "husky": {
     "hooks": {
       "pre-commit": "yarn lint && npm test",
@@ -54,10 +54,15 @@
     "prettier": "^1.19.1",
     "semantic-release": "^15.13.31",
     "ts-jest": "^24.2.0",
-    "typescript": "^3.7.2"
+    "typescript": "^3.7.2",
+    "yarn": "^1.19.2"
   },
   "files": [
     "dist/**/*"
   ],
-  "dependencies": {}
+  "dependencies": {
+    "@types/node-fetch": "^2.5.4",
+    "fast-csv": "^3.4.0",
+    "node-fetch": "^2.6.0"
+  }
 }
