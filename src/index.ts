@@ -42,7 +42,7 @@ function parseCSV(res: Response): Promise<PQueue> {
 }
 
 export const swh = () =>
-  fetch('http://swmath.org/SWH/')
+  fetch('https://raw.githubusercontent.com/zbMATHOpen/SwhSaveNowBatch/master/testdata.csv')
     .then(parseCSV)
     .then((q) => q.onIdle().then(() => log.info('Processing finished')))
 
